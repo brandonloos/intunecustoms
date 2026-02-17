@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>In Tune Customs | Marine Audio Installation | Washington, PA</title>
+<meta name="description" content="In Tune Customs — Expert marine audio installation, custom lighting, system tuning and diagnostics. Serving Washington PA, Pittsburgh, Deep Creek Lake and surrounding areas."/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#2E9BD6;--blue-dark:#1a7ab0;--gray:#8A8E91;--gray-dark:#2c2f33;--gray-darker:#1a1c1e;--white:#fff;--off-white:#f4f6f8;--text:#1e2124;--text-light:#5a6370}
+html{scroll-behavior:smooth}body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+.topbar{background:var(--blue);color:white;text-align:center;padding:9px 5%;font-size:13px;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.07em}
+.topbar a{color:white;text-decoration:underline}
+nav{position:sticky;top:0;z-index:1000;background:rgba(26,28,30,.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(46,155,214,.2);padding:0 5%;height:70px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{height:42px;display:block;transition:opacity .2s}
+.nav-logo:hover{opacity:.85}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:var(--blue)!important;color:white!important;padding:8px 18px;border-radius:4px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.hamburger span{display:block;width:25px;height:2px;background:white;border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--gray-darker);z-index:999;padding:16px 5%;border-bottom:2px solid var(--blue)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;color:rgba(255,255,255,.9);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+
+/* LOGO BANNER SECTION */
+.logo-banner{position:relative;width:100%;padding:60px 5%;background:linear-gradient(135deg,#0a0e14 0%,#141c28 25%,#1a2634 50%,#0f1821 75%,#0a0e14 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:2px solid rgba(46,155,214,.3)}
+.logo-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(46,155,214,.12) 0%,transparent 50%),radial-gradient(circle at 70% 50%,rgba(46,155,214,.08) 0%,transparent 50%);pointer-events:none}
+.logo-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,var(--blue) 50%,transparent 100%);opacity:.5}
+.logo-banner-img{position:relative;z-index:2;max-width:800px;width:100%;height:auto;filter:drop-shadow(0 4px 16px rgba(46,155,214,.3))}
+
+.hero{position:relative;min-height:75vh;display:flex;align-items:center;justify-content:center;background:var(--gray-darker);overflow:hidden;padding:80px 5% 60px}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d1b2a 0%,#1a2a3a 45%,#0f2233 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,28,30,.7) 0%,rgba(26,28,30,.4) 60%,rgba(46,155,214,.1) 100%)}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(46,155,214,.14) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:800px}
+.hero-eyebrow{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);background:rgba(46,155,214,.1);border:1px solid rgba(46,155,214,.28);padding:5px 16px;border-radius:100px;margin-bottom:20px}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(42px,8vw,72px);font-weight:800;line-height:.95;color:white;text-transform:uppercase;margin-bottom:14px}
+.hero h1 span{color:var(--blue)}
+.hero-sub{font-size:clamp(15px,2.2vw,18px);color:rgba(255,255,255,.65);margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.5}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:white;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 26px;border-radius:4px;transition:all .2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:white;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 26px;border:2px solid rgba(255,255,255,.32);border-radius:4px;transition:all .2s}
+.btn-outline:hover{border-color:white;background:rgba(255,255,255,.06)}
+.stats-bar{background:var(--blue);padding:18px 5%;display:flex;justify-content:center;flex-wrap:wrap}
+.stat-item{display:flex;flex-direction:column;align-items:center;padding:7px 32px;border-right:1px solid rgba(255,255,255,.22);color:white}
+.stat-item:last-child{border-right:none}
+.stat-number{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;line-height:1}
+.stat-label{font-size:11px;font-weight:500;opacity:.85;letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
+section{padding:84px 5%}
+.section-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:9px}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,5vw,50px);font-weight:800;text-transform:uppercase;line-height:1.0;color:var(--text);margin-bottom:13px}
+.section-title span{color:var(--blue)}
+.section-subtitle{font-size:16px;color:var(--text-light);line-height:1.65;max-width:570px}
+#services{background:var(--off-white)}
+.services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:22px;max-width:1200px;margin-left:auto;margin-right:auto}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:20px;max-width:1200px;margin:0 auto}
+.service-card{background:white;border-radius:8px;padding:30px 26px;border:1px solid rgba(0,0,0,.06);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--blue);transform:scaleY(0);transform-origin:bottom;transition:transform .3s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 14px 38px rgba(0,0,0,.1)}
+.service-card:hover::before{transform:scaleY(1)}
+.service-icon{width:48px;height:48px;background:rgba(46,155,214,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:21px}
+.service-card h3{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:9px}
+.service-card p{font-size:14px;color:var(--text-light);line-height:1.6}
+#gallery{background:var(--gray-darker);padding:84px 5%}
+#gallery .section-title{color:white}
+#gallery .section-subtitle{color:rgba(255,255,255,.5)}
+.gallery-header{max-width:1200px;margin:0 auto 40px}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:9px;max-width:1200px;margin:0 auto}
+.gallery-item{overflow:hidden;border-radius:6px;position:relative;cursor:pointer;background:rgba(255,255,255,.04)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-item:nth-child(1){grid-column:span 5;grid-row:span 2;height:390px}
+.gallery-item:nth-child(2){grid-column:span 4;height:190px}
+.gallery-item:nth-child(3){grid-column:span 3;height:190px}
+.gallery-item:nth-child(4){grid-column:span 4;height:190px}
+.gallery-item:nth-child(5){grid-column:span 4;height:190px}
+.gallery-item:nth-child(6){grid-column:span 4;height:190px}
+.gallery-item:nth-child(7){grid-column:span 4;height:190px}
+.gallery-tag{position:absolute;bottom:10px;left:12px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:white;background:var(--blue);padding:3px 9px;border-radius:3px;z-index:2}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,28,30,.65) 0%,transparent 55%);opacity:0;transition:opacity .3s}
+.gallery-item:hover .gallery-overlay{opacity:1}
+#brands{background:white;padding:68px 5%}
+.brands-header{text-align:center;margin-bottom:40px}
+.brands-header .section-subtitle{margin:0 auto}
+.brands-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:840px;margin:0 auto}
+.brand-pill{background:var(--off-white);border:1.5px solid rgba(0,0,0,.07);border-radius:100px;padding:9px 20px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text);transition:all .2s;cursor:default}
+.brand-pill:hover{background:var(--blue);color:white;border-color:var(--blue)}
+#about{background:var(--off-white)}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center;max-width:1100px;margin:0 auto}
+.about-img-stack{position:relative;padding-bottom:28px;padding-right:28px}
+.about-img-main{width:100%;border-radius:8px;display:block;aspect-ratio:4/3;object-fit:cover;background:#2c3a4a}
+.about-img-thumb{position:absolute;bottom:0;right:0;width:42%;aspect-ratio:1;border-radius:6px;border:4px solid white;object-fit:cover;background:var(--gray-dark)}
+.about-badge{position:absolute;top:18px;left:-12px;background:var(--blue);color:white;padding:13px 16px;border-radius:6px;text-align:center;box-shadow:0 8px 22px rgba(46,155,214,.4);z-index:2}
+.about-badge strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;line-height:1}
+.about-badge span{font-size:10px;font-weight:700;opacity:.9;letter-spacing:.06em;text-transform:uppercase}
+.about-features{margin-top:26px;display:flex;flex-direction:column;gap:13px}
+.about-feature{display:flex;align-items:flex-start;gap:13px}
+.about-feature-icon{width:34px;height:34px;min-width:34px;background:rgba(46,155,214,.1);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;margin-top:2px}
+.about-feature-text strong{display:block;font-weight:600;font-size:14px;margin-bottom:2px}
+.about-feature-text span{font-size:13px;color:var(--text-light);line-height:1.5}
+#reviews{background:white}
+.reviews-header{text-align:center;margin-bottom:40px}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:1100px;margin:0 auto 32px}
+.review-card{background:var(--off-white);border-radius:8px;padding:24px;border:1px solid rgba(0,0,0,.06)}
+.review-stars{color:#f5a623;font-size:15px;margin-bottom:11px;letter-spacing:2px}
+.review-text{font-size:14px;color:var(--text-light);line-height:1.65;margin-bottom:14px;font-style:italic}
+.review-author{font-weight:600;font-size:14px}
+.review-source{font-size:12px;color:var(--blue);margin-top:1px}
+.reviews-cta{text-align:center}
+.btn-google{display:inline-flex;align-items:center;gap:9px;background:white;color:var(--text);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 24px;border-radius:4px;border:2px solid rgba(0,0,0,.11);transition:all .2s}
+.btn-google:hover{border-color:var(--blue);color:var(--blue)}
+#areas{background:var(--gray-darker);text-align:center}
+#areas .section-title{color:white;margin-bottom:10px}
+#areas .section-subtitle{color:rgba(255,255,255,.52);margin:0 auto 40px}
+.areas-grid{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;max-width:780px;margin:0 auto}
+.area-chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);color:rgba(255,255,255,.78);padding:8px 17px;border-radius:100px;font-size:13px;font-weight:500;transition:all .2s}
+.area-chip:hover{background:var(--blue);border-color:var(--blue);color:white}
+#contact{background:var(--off-white)}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:68px;max-width:1100px;margin:0 auto;align-items:start}
+.contact-info-cards{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.contact-card{background:white;border-radius:8px;padding:17px 20px;display:flex;align-items:center;gap:13px;border:1px solid rgba(0,0,0,.06);text-decoration:none;color:var(--text);transition:transform .2s,box-shadow .2s}
+.contact-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.contact-card-icon{width:40px;height:40px;min-width:40px;background:rgba(46,155,214,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px}
+.contact-card-body strong{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--blue);margin-bottom:2px}
+.contact-card-body span{font-size:13px;color:var(--text)}
+.contact-form-wrap{background:white;border-radius:10px;padding:36px;border:1px solid rgba(0,0,0,.07)}
+.contact-form-wrap h3{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;text-transform:uppercase;margin-bottom:5px}
+.contact-form-wrap>p{font-size:13px;color:var(--text-light);margin-bottom:22px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:11px}
+.form-group{margin-bottom:11px}
+.form-group label{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text);margin-bottom:5px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1.5px solid rgba(0,0,0,.12);border-radius:5px;font-size:14px;font-family:'Barlow',sans-serif;color:var(--text);background:var(--off-white);transition:border-color .2s;outline:none;-webkit-appearance:auto}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue);background:white}
+.form-group textarea{resize:vertical;min-height:96px}
+.form-submit{width:100%;background:var(--blue);color:white;border:none;padding:13px;border-radius:5px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:3px}
+.form-submit:hover{background:var(--blue-dark)}
+.form-note{text-align:center;font-size:11px;color:var(--text-light);margin-top:9px}
+footer{background:var(--gray-darker);color:rgba(255,255,255,.52);padding:52px 5% 26px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;max-width:1100px;margin:0 auto 40px}
+.footer-brand-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:white;margin-bottom:13px}
+.footer-brand-name span{color:var(--blue)}
+.footer-brand p{font-size:13px;line-height:1.65;max-width:255px;margin-bottom:16px}
+.footer-social{display:flex;gap:9px}
+.social-link{width:33px;height:33px;background:rgba(255,255,255,.08);border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;font-size:12px;font-family:'Barlow Condensed',sans-serif;font-weight:800;transition:background .2s}
+.social-link:hover{background:var(--blue)}
+.footer-col h4{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:white;margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:8px}
+.footer-col ul li a{color:rgba(255,255,255,.47);text-decoration:none;font-size:13px;transition:color .2s}
+.footer-col ul li a:hover{color:var(--blue)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;text-align:center;font-size:12px;max-width:1100px;margin:0 auto}
+.footer-bottom a{color:var(--blue)}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;align-items:center;justify-content:center}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90vw;max-height:88vh;border-radius:4px}
+.lightbox-close{position:fixed;top:18px;right:24px;font-size:32px;color:white;cursor:pointer;opacity:.65;transition:opacity .2s}
+.lightbox-close:hover{opacity:1}
+@media(max-width:900px){
+.nav-links{display:none}.hamburger{display:flex}
+.logo-banner{padding:40px 5%}
+.logo-banner-img{max-width:600px}
+.hero{min-height:70vh;padding:60px 5% 50px}
+.about-inner,.contact-inner{grid-template-columns:1fr;gap:32px}
+.footer-inner{grid-template-columns:1fr;gap:28px}
+.gallery-item:nth-child(1){grid-column:span 12;height:230px}
+.gallery-item:nth-child(2),.gallery-item:nth-child(3),.gallery-item:nth-child(4),.gallery-item:nth-child(5),.gallery-item:nth-child(6),.gallery-item:nth-child(7){grid-column:span 6;height:160px}
+.form-row{grid-template-columns:1fr}
+.contact-form-wrap{padding:24px 16px}
+.about-img-stack{padding-bottom:20px;padding-right:20px}
+}
+@media(max-width:600px){
+section{padding:58px 5%}
+.stat-item{padding:7px 16px}
+.logo-banner{padding:30px 5%}
+.logo-banner-img{max-width:400px}
+.hero{min-height:65vh}
+.gallery-item:nth-child(2),.gallery-item:nth-child(3),.gallery-item:nth-child(4),.gallery-item:nth-child(5),.gallery-item:nth-child(6),.gallery-item:nth-child(7){grid-column:span 12;height:170px}
+.services-header{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+⚡ By Appointment Only &nbsp;·&nbsp; Call / Text: <a href="tel:7248846120">(724) 884-6120</a> &nbsp;·&nbsp; Washington PA · Pittsburgh · Deep Creek Lake &amp; Beyond
+</div>
+
+<nav>
+<a href="#hero"><img src="images/logo.png" alt="In Tune Customs" class="nav-logo"/></a>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Our Work</a></li>
+<li><a href="#brands">Brands</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+</ul>
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#services" onclick="toggleMenu()">Services</a>
+<a href="#gallery" onclick="toggleMenu()">Our Work</a>
+<a href="#brands" onclick="toggleMenu()">Brands</a>
+<a href="#about" onclick="toggleMenu()">About</a>
+<a href="#reviews" onclick="toggleMenu()">Reviews</a>
+<a href="#contact" onclick="toggleMenu()">Get a Quote</a>
+</div>
+
+<!-- LOGO BANNER SECTION -->
+<section class="logo-banner">
+<img src="images/night-boat.png" alt="In Tune Customs" class="logo-banner-img"/>
+</section>
+
+<section class="hero" id="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="hero-glow"></div>
+<div class="hero-content">
+<div class="hero-eyebrow">Washington, PA &amp; Surrounding Areas</div>
+<h1>The Best <span>Sound</span><br>On The Water</h1>
+<p class="hero-sub">Expert marine audio installation, custom lighting systems, and full-service builds. We make your boat sound as good as it looks.</p>
+<div class="hero-actions">
+<a href="#contact" class="btn-primary">
+<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.8 19.79 19.79 0 011 3.22 2 2 0 012.98 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+Get a Free Quote
+</a>
+<a href="#gallery" class="btn-outline">View Our Work</a>
+</div>
+</div>
+</section>
+
+<div class="stats-bar">
+<div class="stat-item"><span class="stat-number">5★</span><span class="stat-label">Rated Service</span></div>
+<div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">Brands Stocked</span></div>
+<div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Custom Installs</span></div>
+<div class="stat-item"><span class="stat-number">Mobile</span><span class="stat-label">Service Available</span></div>
+</div>
+
+<section id="services">
+<div class="services-header">
+<div>
+<div class="section-label">What We Do</div>
+<h2 class="section-title">Full-Service <span>Marine Audio</span><br>&amp; Accessories</h2>
+</div>
+<p class="section-subtitle">From a simple speaker swap to a complete custom build — we design, supply, and install everything in-house with expert precision.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">🔊</div>
+<h3>Audio Installation</h3>
+<p>Full marine audio builds — head units, amplifiers, subwoofers, tower speakers, and cabin speakers. Professionally wired and tuned from the ground up.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">💡</div>
+<h3>Lighting Installation</h3>
+<p>Custom RGB and accent lighting — underwater, deck, tower, and interior ambiance systems. We make your boat glow as loud as it sounds.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🎛️</div>
+<h3>System Tuning</h3>
+<p>Professional audio calibration for your vessel's exact acoustics. Because a great install is only as good as how it's tuned.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🔧</div>
+<h3>System Diagnostics</h3>
+<p>Something not sounding right? We diagnose and repair marine audio and electrical issues — regardless of where the system was originally installed.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📐</div>
+<h3>System Design &amp; Consultation</h3>
+<p>Not sure where to start? We'll walk through your boat, your goals, and your budget to design the perfect system before we turn a wrench.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🏎️</div>
+<h3>Powersports &amp; Automotive</h3>
+<p>Golf carts, side-by-sides, and vehicles — we bring the same quality craftsmanship to anything with a battery and a need for great sound.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="gallery-header">
+<div class="section-label">Our Work</div>
+<h2 class="section-title">Builds That <span>Turn Heads</span></h2>
+<p class="section-subtitle">Every install is custom. Every detail matters. Recent work from the In Tune Customs shop.</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item" onclick="openLightbox('images/cockpit-view.jpg')">
+<img src="images/cockpit-view.jpg" alt="RGB lighting system installed in boat"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">RGB Lighting</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/tower-speakers.jpg')">
+<img src="images/tower-speakers.jpg" alt="Wake tower speaker installation"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">Tower Audio</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/hertz-speaker.jpg')">
+<img src="images/hertz-speaker.jpg" alt="Hertz marine speaker custom pod"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">Hertz Marine</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/dual-speakers.jpg')">
+<img src="images/dual-speakers.jpg" alt="Dual marine subwoofer installation"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">Subwoofer Install</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/jl-audio.jpg')">
+<img src="images/jl-audio.jpg" alt="JL Audio marine speaker flush mount"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">JL Audio</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/wet-sounds.jpg')">
+<img src="images/wet-sounds.jpg" alt="Wet Sounds chrome speaker install"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">Wet Sounds</div>
+</div>
+<div class="gallery-item" onclick="openLightbox('images/fusion-head-unit.jpg')">
+<img src="images/fusion-head-unit.jpg" alt="Fusion marine head unit display"/>
+<div class="gallery-overlay"></div>
+<div class="gallery-tag">Fusion Head Unit</div>
+</div>
+</div>
+</section>
+
+<section id="brands">
+<div class="brands-header">
+<div class="section-label">Authorized Products</div>
+<h2 class="section-title">Top Marine <span>Audio Brands</span></h2>
+<p class="section-subtitle">We partner with the industry's best manufacturers — products built for the water and built to last.</p>
+</div>
+<div class="brands-grid">
+<div class="brand-pill">Wet Sounds</div>
+<div class="brand-pill">JL Audio</div>
+<div class="brand-pill">Rockford Fosgate</div>
+<div class="brand-pill">Kicker</div>
+<div class="brand-pill">Hertz Marine</div>
+<div class="brand-pill">Fusion</div>
+<div class="brand-pill">Audio Dynamics</div>
+<div class="brand-pill">Epoch Batteries</div>
+<div class="brand-pill">Shadow-Caster</div>
+<div class="brand-pill">+ Many More</div>
+</div>
+</section>
+
+<section id="about">
+<div class="about-inner">
+<div class="about-img-stack">
+<div class="about-badge">
+<strong>ITC</strong>
+<span>Marine<br>Experts</span>
+</div>
+<img class="about-img-main" src="images/dual-speakers.jpg" alt="In Tune Customs marine audio work"/>
+<img class="about-img-thumb" src="images/fusion-head-unit.jpg" alt="Fusion head unit on ITC display board"/>
+</div>
+<div>
+<div class="section-label">About In Tune Customs</div>
+<h2 class="section-title">Passion for <span>Sound</span><br>on the Water</h2>
+<p class="section-subtitle">We're a Washington, PA based marine audio and accessories shop run by enthusiasts who live this lifestyle. Every install is treated like it's going on our own boat.</p>
+<div class="about-features">
+<div class="about-feature">
+<div class="about-feature-icon">📍</div>
+<div class="about-feature-text">
+<strong>Shop Location</strong>
+<span>1606 Park Ave, Washington PA 15301 — Drop off by appointment</span>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">🚐</div>
+<div class="about-feature-text">
+<strong>Mobile Installation Available</strong>
+<span>We come to you — marina, storage facility, or your driveway.</span>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">🗺️</div>
+<div class="about-feature-text">
+<strong>Wide Service Area</strong>
+<span>Pittsburgh rivers, Mon Valley, Deep Creek Lake, Cheat Lake &amp; beyond.</span>
+</div>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">⭐</div>
+<div class="about-feature-text">
+<strong>Tuned &amp; Tested Before Delivery</strong>
+<span>Every system is fully calibrated and tested before it leaves our hands.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="reviews-header">
+<div class="section-label">Client Reviews</div>
+<h2 class="section-title">Don't Take Our <span>Word For It</span></h2>
+</div>
+<div class="reviews-grid">
+<div class="review-card">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Brandon did awesome job getting me hooked up with a WETSOUNDS SDX6 AMP in my 2019 Malibu 25 LSV. He wired up a full plug and play system for my boat. He made my boat speakers great again and you should trust him with yours!"</p>
+<div class="review-author">Benton Moyer</div>
+<div class="review-source">Google Review · Dec 2024</div>
+</div>
+<div class="review-card">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Brandon and Tanner did an amazing job on my Ram! Very meticulous and a strong attention to detail. Couldn't be happier with the results and the communication and workmanship. Highly recommend for any custom audio needs."</p>
+<div class="review-author">Steven Beard</div>
+<div class="review-source">Google Review · Dec 2024</div>
+</div>
+<div class="review-card">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"The team at InTune Customs did an amazing job on installing some new speakers on my boat. The install was clean looks amazing. The most important thing is how it sounds. Brandon not only tuned the new speakers, but also my existing speakers and it sounds even better than it looks."</p>
+<div class="review-author">Curtis Hart</div>
+<div class="review-source">Google Review · Jul 2024</div>
+</div>
+</div>
+<div class="reviews-cta">
+<a href="https://www.google.com/search?q=In+Tune+Customs+LLC+Washington+PA+reviews" target="_blank" rel="noopener" class="btn-google">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+Read All Google Reviews
+</a>
+</div>
+</section>
+
+<section id="areas">
+<div class="section-label">Where We Work</div>
+<h2 class="section-title">We Come <span>To You</span></h2>
+<p class="section-subtitle">Shop drop-off in Washington PA, or mobile installation wherever your boat lives.</p>
+<div class="areas-grid">
+<div class="area-chip">Washington, PA</div>
+<div class="area-chip">Pittsburgh</div>
+<div class="area-chip">Mon Valley</div>
+<div class="area-chip">Deep Creek Lake</div>
+<div class="area-chip">Cheat Lake</div>
+<div class="area-chip">Youghiogheny River</div>
+<div class="area-chip">Monongahela River</div>
+<div class="area-chip">Ohio River</div>
+<div class="area-chip">Allegheny River</div>
+<div class="area-chip">Lake Arthur</div>
+<div class="area-chip">And Beyond</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact-inner">
+<div>
+<div class="section-label">Get In Touch</div>
+<h2 class="section-title">Let's Build<br><span>Your System</span></h2>
+<p class="section-subtitle">Ready to upgrade? We'll talk through your vessel, your goals, and your budget. No pressure, just expertise.</p>
+<div class="contact-info-cards">
+<a class="contact-card" href="tel:7248846120">
+<div class="contact-card-icon">📞</div>
+<div class="contact-card-body"><strong>Brandon Loos</strong><span>(724) 884-6120</span></div>
+</a>
+<a class="contact-card" href="tel:7245792666">
+<div class="contact-card-icon">📞</div>
+<div class="contact-card-body"><strong>Tanner Astorina</strong><span>(724) 579-2666</span></div>
+</a>
+<a class="contact-card" href="mailto:brandon.loos@intunecustoms.com">
+<div class="contact-card-icon">✉️</div>
+<div class="contact-card-body"><strong>Email</strong><span>brandon.loos@intunecustoms.com</span></div>
+</a>
+<a class="contact-card" href="https://maps.google.com/?q=1606+Park+Ave+Washington+PA+15301" target="_blank">
+<div class="contact-card-icon">📍</div>
+<div class="contact-card-body"><strong>Shop (By Appointment)</strong><span>1606 Park Ave, Washington PA 15301</span></div>
+</a>
+<a class="contact-card" href="https://www.facebook.com/intunecustoms.llc/" target="_blank">
+<div class="contact-card-icon">📘</div>
+<div class="contact-card-body"><strong>Facebook</strong><span>facebook.com/intunecustoms.llc</span></div>
+</a>
+<a class="contact-card" href="https://www.instagram.com/intune.customs" target="_blank">
+<div class="contact-card-icon">📸</div>
+<div class="contact-card-body"><strong>Instagram</strong><span>@intune.customs</span></div>
+</a>
+</div>
+</div>
+<div class="contact-form-wrap">
+<h3>Request a Quote</h3>
+<p>Tell us about your project and we'll get back to you quickly.</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<div class="form-row">
+<div class="form-group">
+<label>First Name</label>
+<input type="text" name="first_name" placeholder="John" required/>
+</div>
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" name="last_name" placeholder="Smith" required/>
+</div>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="(724) 555-0100" required/>
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="email" name="email" placeholder="john@email.com"/>
+</div>
+<div class="form-group">
+<label>Vessel / Vehicle Type</label>
+<select name="vessel_type">
+<option value="">Select...</option>
+<option>Wake Boat</option>
+<option>Pontoon</option>
+<option>Ski / Runabout</option>
+<option>Center Console</option>
+<option>Jet Ski / PWC</option>
+<option>Golf Cart</option>
+<option>Side-by-Side / UTV</option>
+<option>Automotive</option>
+<option>Other</option>
+</select>
+</div>
+<div class="form-group">
+<label>Tell Us About Your Project</label>
+<textarea name="message" placeholder="What are you looking to upgrade? Any brands or features in mind?"></textarea>
+</div>
+<button type="submit" class="form-submit">Send My Request →</button>
+<p class="form-note">By appointment only · We respond within 24 hours</p>
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="footer-brand-name"><span>i</span>TC INTUNE CUSTOMS</div>
+<p>Washington PA's marine audio and accessories specialists. Custom builds for boats, PWC, powersports, and vehicles — done right.</p>
+<div class="footer-social">
+<a class="social-link" href="https://www.facebook.com/intunecustoms.llc/" target="_blank">FB</a>
+<a class="social-link" href="https://www.instagram.com/intune.customs" target="_blank">IG</a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Services</h4>
+<ul>
+<li><a href="#services">Audio Installation</a></li>
+<li><a href="#services">Lighting Systems</a></li>
+<li><a href="#services">System Tuning</a></li>
+<li><a href="#services">Diagnostics</a></li>
+<li><a href="#services">System Design</a></li>
+<li><a href="#services">Powersports</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:7248846120">(724) 884-6120 — Brandon</a></li>
+<li><a href="tel:7245792666">(724) 579-2666 — Tanner</a></li>
+<li><a href="mailto:brandon.loos@intunecustoms.com">Email Brandon</a></li>
+<li><a href="https://maps.google.com/?q=1606+Park+Ave+Washington+PA" target="_blank">1606 Park Ave, Washington PA</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 In Tune Customs LLC &nbsp;·&nbsp; Washington, PA &nbsp;·&nbsp; <a href="tel:7248846120">(724) 884-6120</a> &nbsp;·&nbsp; By Appointment Only</p>
+</div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<span class="lightbox-close">✕</span>
+<img id="lightbox-img" src="" alt=""/>
+</div>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+function openLightbox(src){document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden'}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()})
+window.addEventListener('scroll',()=>{document.getElementById('mobileMenu').classList.remove('open')})
+</script>
+</body>
+</html>
